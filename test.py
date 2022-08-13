@@ -1,4 +1,5 @@
 from cmath import sqrt
 
 
-print(sqrt(-2))
+a = input()
+print(a[1])

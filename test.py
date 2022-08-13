@@ -1,5 +1,6 @@
 from cmath import sqrt
 
 
-a = input()
-print(a[1])
+a = "48138"
+b = "100000"
+print(a < b)

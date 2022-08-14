@@ -14,6 +14,6 @@ for i in range(len(b)):
 divisor = int(nine + zero)
 dividend = divisor * int(a) + dividend
 gcd = int(math.gcd(dividend, divisor))
-dividend = int(dividend / gcd)
-divisor = int(divisor / gcd)
+dividend = int(dividend // gcd)
+divisor = int(divisor // gcd)
 print(dividend, "/", divisor)

@@ -22,9 +22,11 @@ def intToChar(a):
 
 
 code = input()
+
 n1 = code[3] + code[10] + code[17] + code[24] + code[31]
 n2 = code[7] + code[12] + code[17] + code[22] + code[27]
 n3 = str(int(n1) + int(n2) + 10000)
+
 if int(n3) < 10000:
     n4 = int(n3[0]) + int(n3[1]) + int(n3[2])
     n4_string = n3[0] + n3[1] + n3[2]
@@ -34,7 +36,9 @@ elif int(n3) >= 100000:
 else:
     n4 = int(n3[1]) + int(n3[2]) + int(n3[3])
     n4_string = n3[1] + n3[2] + n3[3]
+
 n5 = n4 % 10 + 1
 n6 = intToChar(n5)
 n7 = str(n4_string) + n6
+
 print(n7)

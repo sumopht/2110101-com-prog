@@ -15,7 +15,7 @@ def main():
     height = float(input())
     print("Mosteller =", round(((weight * height) ** 0.5) / 60, 5))
     print("Du Bois =", round(0.007184 * (weight**0.425) * (height**0.725), 5))
-    print("Fujimoto =", round(0.008883 * (weight**0.444) * (height**0.663), 5))
+    print("Fujimoto =", round(0.008883 * (weight**0.444) * (height**0.663), 5)
 
 
 exec(input())  # DON'T remove this line

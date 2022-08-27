@@ -1,1 +1,3 @@
-print(str(-10) > str(-30))
+n = "12345"
+n = [*n]
+print(n)

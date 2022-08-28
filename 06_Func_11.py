@@ -1,4 +1,3 @@
-a, b = int(input(), 2).split()
-b = int(input(), 2)
+a, b = [int(x, 2) for x in input().split()]
 c = a + b
-print(c)
+print(bin(c)[2:])

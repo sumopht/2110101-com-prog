@@ -1,3 +1,2 @@
-a, b = input().split()
-if a == "q":
-    print("hello")
+for i in range(0, 20, 2):
+    print(i)

@@ -1,6 +1,3 @@
-from asyncio.sslproto import _SHUTDOWN
-
-
 def cut(a):
     before = []
     after = []
@@ -17,9 +14,9 @@ def shuffle(a):
     amount = len(a)
     half = amount / 2
     temp = []
-    for i in range(0, int(half), 2):
+    for i in range(0, int(half)):
         temp.append(a[i])
-        temp.append(a[i + 1])
+        temp.append(a[i + int(half)])
     return temp
 
 

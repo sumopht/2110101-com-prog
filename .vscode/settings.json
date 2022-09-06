@@ -1,3 +1,17 @@
 {
-    "python.formatting.provider": "autopep8"
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.formatOnSave": true
+    },
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+        "--max-line-length=150",
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.linting.pylintArgs": [
+        "--generate-members"
+    ],
+    "python.pythonPath": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": false
 }

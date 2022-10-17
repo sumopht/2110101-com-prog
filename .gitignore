@@ -1,2 +1,2 @@
-grader/test.py
-.vscode/
+**/test.py
+**/.vscode/

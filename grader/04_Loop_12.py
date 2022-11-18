@@ -1,12 +1,18 @@
 n = int(input())
-for row in range(n):
-    for i in reversed(range(n - (row + 1))):
-        print('.', end="")
-    print('*', end='')
-    if row == n - 1:
-        print('*' * (2 * n - 2), end='')
-        break
-    if row > 0:
-        print('.' * (2 * row - 1), end='')
-        print('*', end='')
-    print()
+A = []
+B = []
+
+for i in range(n):
+    if i % 2 == 0:
+        a, b = [int(e) for e in input().split()]
+    else:
+        b, a = [int(e) for e in input().split()]
+
+    A.append(a)
+    B.append(b)
+
+mode = input()
+if mode == 'Zig-Zag':
+    print(min(A), max(B))
+else:
+    print(min(B), max(A))
